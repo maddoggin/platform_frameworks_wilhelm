@@ -1930,7 +1930,7 @@ SLresult android_audioPlayer_metadata_getValue(CAudioPlayer *ap,
                 res = SL_RESULT_PARAMETER_INVALID;
             } else {
                 pValue->size = valueSize;
-                memcpy(&pValue->data, &valueData, sizeof(pValue->data));
+                memcpy(&pValue->data, &valueData, sizeof(SLuint32));
             }
         }
         break;
